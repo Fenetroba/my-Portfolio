@@ -1,0 +1,80 @@
+.swiper{
+    width: 100%;
+}
+.portfolio{
+    margin: 100px
+}
+.card{
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    position: relative;
+}
+.card .content{
+    position: absolute;
+    bottom: -90px;
+    left: 20px;
+    border: solid 3px var(--linColor);
+    padding: 6px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .6s;
+}
+.card:hover .content{
+    bottom: 20px;
+}
+.card1{
+    background-image: url('../Asset/pexels-cottonbro-studio-6752321.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+.card2{
+    background-image: url('../Asset/pexels-dziana-hasanbekava-7063748.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.card3{
+    background-image: url('../Asset/pexels-energepiccom-110473.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.card4{
+    background-image: url('../Asset/pexels-isabella-mendes-341013.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.card5{
+    background-image: url('../Asset/pexels-m-⭐-godshepherdly-848573.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.card6{
+    background-image: url('../Asset/pexels-pixabay-355465.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.portfolio .myportFolio{
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: solid 8px skyblue;
+
+    width: 50%;
+    margin-bottom: 30px;
+}
+.portfolio p{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width:1000px) {
+    .portfolio{
+        margin: 50px;
+        
+    }
+    
+}

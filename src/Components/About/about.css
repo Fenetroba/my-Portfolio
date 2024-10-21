@@ -1,0 +1,108 @@
+.about__ContenerAll{
+    /* margin-left: 30px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    gap: 60px;
+    margin: 40px;
+    
+  
+
+}
+.AboutTitle{
+    margin: 40px;
+}
+.about__ContenerAll h1{
+    border-bottom: solid skyblue 6px;
+
+}
+.about__image img{
+    width: 100%;
+    height: 300px;
+}
+.about__contener{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    width: 500px;
+}
+.about__skillwrapper{
+    margin-top:40px ;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.line{
+    width: 100%;
+    height: 12px;
+    background-color: gold;
+    margin-top: 6px;
+    position: relative;
+    
+
+}
+.line:hover{
+    background-color: rgb(238, 223, 138);
+    cursor: pointer;
+}
+.line::after{
+    position: absolute;
+    content: '';
+    background:var(--linColor);
+    width: 90%;
+    height: 6px;
+    margin-top:3px;
+    border-radius: 0 10px 10px 0;
+}
+.about__skillwrapper .about__skill:nth-of-type(2) .line::after{width: 89%;}
+.about__skillwrapper .about__skill:nth-of-type(3) .line::after{width: 79%;}
+.about__skillwrapper .about__skill:nth-of-type(4) .line::after{width: 89%;}
+.about__skillwrapper .about__skill:nth-of-type(5) .line::after{width: 79%;}
+.about__image{
+    position: relative;
+
+}
+.about__exp:hover{
+    box-shadow: 0 0 40px rgba(245, 223, 97, 0.993);
+}
+.about__exp{
+    width: 150px;
+    height: 150px;
+    background:var(--bg_color);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+    left: -8%;
+    box-shadow: 0 0 8px rgba(245, 223, 97, 0.993);
+    
+   
+
+}
+.about__exp h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    transform: rotate(-30deg);
+   
+    
+}
+.about__exp h2 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:1000px){
+    .about__ContenerAll{
+        margin-bottom: 80px;
+        
+    }
+}

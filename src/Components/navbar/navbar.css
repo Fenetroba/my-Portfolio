@@ -1,0 +1,141 @@
+.navBar__contener {
+    display: flex;
+    background:var(--bg_color);
+   
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    border-bottom: solid #fff 0.1px;
+    color: var(--text_color);
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
+}
+
+.right__side__icon h1 {
+
+    cursor: pointer;
+    color: gold;
+
+}
+
+.navBar__contener ul {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    list-style: none;
+    gap: 30px;
+    font-size: 16px;
+    margin-right: 40px;
+    /* padding: 20px 0; */
+    cursor: pointer;
+
+}
+
+.navBar__contener li {
+    display: block;
+    padding: 7px;
+    background-color: rgba(168, 228, 255, 0.692);
+    border: white solid 0.4px;
+    transition: 0.2s;
+    /* margin: 20px; */
+}
+
+.navBar__contener li:hover {
+    background-color: rgb(128, 119, 73);
+}
+
+hr {
+    color: gold;
+    border-radius: 30px;
+}
+
+.navbar__menu {
+    display: none;
+}
+
+.body__britness {
+    width: 12px;
+    height: 12px;
+    background-color: gold;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.navbar__menu {
+    font-size: 30px;
+    margin-right: -50px;
+    color: var(--border);
+    cursor: pointer;
+}
+
+.britness {
+    display: flex;
+}
+.naaaa{
+    position: fixed;
+    top: 0;
+    background: var(--bg_color);
+    width: 100%;
+    }
+
+@media screen and (max-width:1100px) {
+    .navbar__menu {
+        display: flex;
+    }
+
+    .navBar__contener {
+        position: relative;
+        
+    }
+
+     ul {
+        position: absolute;
+        top: 110%;
+        width: 100%;
+        left: 0;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        background-color: rgba(10, 6, 61, 0.637);
+        transform: translateX(-120%);
+        height: 100vh;
+        z-index: 1000;
+    
+       
+
+
+
+    }
+    .active {
+        
+        transform:none;
+        
+      }
+
+    .navBar__contener ul li {
+        padding: 10px 0;
+        border: none;
+        background: var(--Menu-mobile);
+       display: block;
+        color: var(--text_color);
+        width: 100%;
+  
+    
+    }
+
+   
+
+    .navBar__contener ul li:hover{
+        color: rgb(236, 225, 169);
+    }
+
+    hr {
+        width: 130px;
+        margin: auto;
+
+    }
+
+
+
+}
