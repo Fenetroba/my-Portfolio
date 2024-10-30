@@ -7,18 +7,22 @@ import PortFolio from "./Components/PortFolio/PortFolio";
 import Service from "./Components/service/Service";
 const App = () => {
 
-  
+window.addEventListener("load" ,function(){
+document.querySelector(".container").classList.add("fade")
+  })
   return (
     <div>
+      <div class="container">
+        <div class="half"></div>
+        <div class="half"></div>
+      </div>
 
-   <NavBar/>
-   <Header/>
-   <About/>
-   <Service/>
-   <PortFolio/>
-   <Footer/>
-
-
+      <NavBar />
+      <Header />
+      <About />
+      <Service />
+      <PortFolio />
+      <Footer />
     </div>
   );
 };

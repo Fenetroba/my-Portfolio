@@ -1,6 +1,7 @@
 import React from "react";
 import picture from "../Asset/myPhoto.jpg";
 import "./header.css";
+
 import {
   FaFacebook,
   FaGithub,
@@ -39,7 +40,7 @@ const Header = () => {
         </div>
         <button>
         
-          Download CV<RiDownload2Fill style={{color:"gole"}}/> 
+          <a href="../Asset/FENACV.pdf" download> Download CV <RiDownload2Fill style={{color:"gole"}}/> </a>
         </button>
       </div>
     </div>

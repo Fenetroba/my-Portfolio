@@ -9,13 +9,12 @@ const About = () => {
         <h1>About Me</h1>
        
         <p>
-          I am Front end Web Devloper Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Distinctio, praesentium 
+        Hi ! I'm Fenet Roba, a Front-End Web Developer who knows HTML, CSS, JavaScript, React.js, and Bootstrap really well. I make websites that work well on any device and are easy for people to use. I love coding and always try to learn new things to get better at what I do.
         </p>
         <div className="about__mySkill">
           <h2>MY Skill</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nostrum
+          front-end web developer with a passion for creating dynamic and responsive web applications. My skills include:
            
           </p>
           <div className="about__skillwrapper">
