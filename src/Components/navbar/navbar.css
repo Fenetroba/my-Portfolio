@@ -1,13 +1,11 @@
 .navBar__contener {
     display: flex;
-    /* background:var(--bg_color); */
-   
     align-items: center;
     justify-content: space-around;
-    height: 60px;
-    border-bottom: solid #fff 0.1px;
+     border-bottom: solid #fff 0.1px;
     color: var(--text_color);
     box-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
+    height: 60px;
 }
 
 .right__side__icon h1 {
@@ -30,16 +28,13 @@
 }
 
 .navBar__contener li {
-    display: block;
-    padding: 2px 7px;
-    background-color: rgba(168, 228, 255, 0.692);
-    border: white solid 0.4px;
+    display: block; 
     transition: 0.2s;
    
 }
 
 .navBar__contener li:hover {
-    background-color: rgb(128, 119, 73);
+    color: rgb(247, 208, 14);
 }
 
 hr {
@@ -64,7 +59,7 @@ hr {
 .navbar__menu {
     font-size: 30px;
     margin-right: -50px;
-    color: var(--border);
+    color: var(--bg_color);
     cursor: pointer;
 }
 
@@ -79,18 +74,19 @@ hr {
     }
     .navBar__contener span{
         font-size: 12px;
-        color: black;
+        /* color: black; */
     }
     .TopBackGround{
         position: fixed;
         top: 0;
+        
         width: 100%;
         z-index: 30000;
-        background:linear-gradient(to bottom,rgb(46, 12, 238),rgb(0, 0, 3));
+        background:rgb(0, 0, 0);
         border: none;
     }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:700px) {
     .navbar__menu {
         display: flex;
     }
@@ -108,7 +104,7 @@ hr {
         display: flex;
         text-align: center;
         flex-direction: column;
-        background-color: rgba(10, 6, 61, 0.637);
+        background-color: rgba(0, 0, 0, 0.966);
         transform: translateX(-120%);
         height: 100vh;
         z-index: 1000;
@@ -120,14 +116,14 @@ hr {
     }
     .active {
         
-        transform:none;
+   transform: none;
         
       }
 
     .navBar__contener ul li {
         padding: 10px 0;
-        border: none;
-        background: var(--Menu-mobile);
+        border-bottom: solid rgb(156, 154, 154) 1px;
+        /* background: var(--Menu-mobile); */
        display: block;
         color: var(--text_color);
         width: 100%;

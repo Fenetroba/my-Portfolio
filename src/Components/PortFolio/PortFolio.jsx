@@ -58,6 +58,28 @@ const PortFolio = () => {
           </span>
           </div>
         </div>
+
+        <div className="card">
+          <div className="background"></div>
+          <div className="logo"> 
+          <span className="ProjectTitels">Weather</span>
+          </div>
+          <div className="box box1">
+            <span className="icon">
+              <a href="https://github.com/Fenetroba/my-Portfolio"><FaGithub style={{color:'black'}} className=""/></a>
+            </span>
+          </div>
+          <div className="box box2">
+            <span className="icon">
+            <a href="https://www.linkedin.com/in/fenet-roba/"><FaLinkedin style={{color:'black'}} /></a>
+            </span>
+          </div>
+          <div className="box box3">
+          <span className="icon">
+          <a href="https://www.linkedin.com/in/fenet-roba/"><FaFacebook style={{color:'black'}}/></a>
+          </span>
+          </div>
+        </div>
       </div>
     </div>
   );
