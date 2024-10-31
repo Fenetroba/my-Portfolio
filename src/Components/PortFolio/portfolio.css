@@ -1,80 +1,172 @@
-.swiper{
-    width: 100%;
-}
+
 .portfolio{
-    margin: 100px
+    margin: 100px;
 }
-.card{
-    height: 300px;
-    width: 300px;
-    border-radius: 8px;
+.project__contener{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+
     position: relative;
-}
-.card .content{
-    position: absolute;
-    bottom: -90px;
-    left: 20px;
-    border: solid 3px var(--linColor);
-    padding: 6px 20px;
+    width: 370px;
+    height: 180px;
+    background: lightgrey;
     border-radius: 10px;
     overflow: hidden;
-    transition: .6s;
-}
-.card:hover .content{
-    bottom: 20px;
-}
-.card1{
-    background-image: url('../Asset/pexels-cottonbro-studio-6752321.jpg');
-    background-position: center;
-    background-size: cover;
-    
-}
-.card2{
-    background-image: url('../Asset/pexels-dziana-hasanbekava-7063748.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.card3{
-    background-image: url('../Asset/pexels-energepiccom-110473.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.card4{
-    background-image: url('../Asset/pexels-isabella-mendes-341013.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.card5{
-    background-image: url('../Asset/pexels-m-⭐-godshepherdly-848573.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.card6{
-    background-image: url('../Asset/pexels-pixabay-355465.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.portfolio .myportFolio{
-    font-size: 30px;
-    font-weight: 700;
-    border-bottom: solid 8px skyblue;
-
+    box-shadow: rgba(1, 1, 43, 0.2) 0px 7px 29px 0px;
+    transition: all 1s ease-in-out;
+    margin:20px 0;
+  }
+  
+  .background {
+    position: absolute;
+    inset: 0;
+    background: url('../Asset//lensaWEb.png');
+  }
+  
+  .logo {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .logo .logo-svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .icon .svg {
+    fill: rgba(255, 255, 255, 0.797);
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .box {
+    position: absolute;
+    padding: 10px;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.389);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 1px solid white;
+    border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+    box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+    transform-origin: bottom left;
+    transition: all 1s ease-in-out;
+  }
+  
+  .box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .box:hover .svg {
+    fill: white;
+  }
+  
+  .box1 {
+    width: 70%;
+    height: 70%;
+    bottom: -70%;
+    left: -70%;
+  }
+  
+  .box1::before {
+    background: radial-gradient(circle at 30% 107%, #01123f 0%, #040d94 5%, #24768f 60%, #62c2fe 90%);
+  }
+  
+  .box1:hover::before {
+    opacity: 1;
+  }
+  
+  .box1:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+  .box2 {
     width: 50%;
-    margin-bottom: 30px;
-}
-.portfolio p{
-    font-size: 14px;
-    margin-bottom: 30px;
-}
+    height: 50%;
+    bottom: -50%;
+    left: -50%;
+    transition-delay: 0.2s;
+  }
+  
+  .box2::before {
+    background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00ACEE 90%);
+  }
+  
+  .box2:hover::before {
+    opacity: 1;
+  }
+  
+  .box2:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+  .box3 {
+    width: 30%;
+    height: 30%;
+    bottom: -30%;
+    left: -30%;
+    transition-delay: 0.4s;
+  }
+  
+  .box3::before {
+    background: radial-gradient(circle at 30% 107%, #969fff 0%, #b349ff 90%);
+  }
+  
+  .box3:hover::before {
+    opacity: 1;
+  }
+  
+  .box3:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+  .box4 {
+    width: 10%;
+    height: 10%;
+    bottom: -10%;
+    left: -10%;
+    transition-delay: 0.6s;
+  }
+  
+ 
+  
+  .card:hover .box {
+    bottom: -1px;
+    left: -1px;
+  }
+  
+  .card:hover .logo {
+    transform: translate(0, 0);
+    bottom: 20px;
+    right: 20px;
+  }
 @media screen and (max-width:1000px) {
     .portfolio{
         margin: 50px;
         
     }
+    .project__contener{
+       
+        flex-wrap: wrap;
+    }
     
 }
+

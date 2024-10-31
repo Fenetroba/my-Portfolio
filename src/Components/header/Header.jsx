@@ -1,6 +1,7 @@
 import React from "react";
 import picture from "../Asset/myPhoto.jpg";
 import "./header.css";
+import cv from '../Asset/FENACV.pdf'
 
 import {
   FaFacebook,
@@ -40,7 +41,7 @@ const Header = () => {
         </div>
         <button>
         
-          <a href="../Asset/FENACV.pdf" download> Download CV <RiDownload2Fill style={{color:"gole"}}/> </a>
+          <a href={cv} download> Download CV <RiDownload2Fill style={{color:"gole"}}/> </a>
         </button>
       </div>
     </div>

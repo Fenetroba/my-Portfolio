@@ -15,10 +15,7 @@ const Service = () => {
       <div className="what__des">
         <h1>What I Do</h1>
         <p className="service__what__iDO">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem amet doloribus, hic nesciunt aut optio delectus odit,
-          quibusdam reprehenderit saepe quae odio temporibus asperiores id.
-          Voluptatum aspernatur reiciendis quisquam quaerat.
+        I create easy-to-use interfaces that improve how people interact with and enjoy digital products. My aim is to combine good looks with practical features, providing smooth and enjoyable digital experiences.
         </p>
       </div>
       <div className="service__card">

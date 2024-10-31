@@ -63,7 +63,7 @@ const NavBar = () => {
             setunderline("Info");
           }}
         >
-          <FaInfo /> Info {underline === "Info" ? <hr /> : ""}
+          <FaInfo /> About Me {underline === "About" ? <hr /> : ""}
         </li>
         <li
           onClick={() => {
@@ -93,14 +93,7 @@ const NavBar = () => {
         >
           <FaServicestack /> Service {underline === "Service" ? <hr /> : ""}
         </li>
-        <li
-          onClick={() => {
-            setunderline("Testimonyial");
-          }}
-        >
-          <FaPeopleCarry /> Testimonyial{" "}
-          {underline === "Testimonyial" ? <hr /> : ""}
-        </li>
+       
       </ul>
       <div className="britness">
         <FaMoon
