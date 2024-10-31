@@ -39,15 +39,18 @@ const NavBar = () => {
   };
   const [underline, setunderline] = useState();
   const Navs = useRef();
-  window.addEventListener('scroll', function () {
-    // if (window.scrollY > 100) {
-    //   Navs.current.className.add("naaaa");
-    //   console.log('scrold')
-    // }
+  
+  window.addEventListener("scroll", function () {
+    const tope = document.getElementById("toper");
+
+    tope.classList.toggle("TopBackGround", window.scrollY > 0);
   });
+
+
+
   return (
-    <div className="navBar__contener" ref={Navs}>
-      <div className="right__side__icon">
+    <div className="navBar__contener" ref={Navs} id="toper">
+      <div className="right__side__icon" >
         <h1>FENA</h1>
       </div>
       <ul ref={Menu}>
@@ -56,42 +59,42 @@ const NavBar = () => {
             setunderline("Home");
           }}
         >
-          <FaHome /> Home {underline === "Home" ? <hr /> : ""}
+          <FaHome /> <span>Home</span> {underline === "Home" ? <hr /> : ""}
         </li>
         <li
           onClick={() => {
-            setunderline("Info");
+            setunderline("About");
           }}
         >
-          <FaInfo /> About Me {underline === "About" ? <hr /> : ""}
+          <FaInfo /> <span>About Me</span> {underline === "About" ? <hr /> : ""}
         </li>
         <li
           onClick={() => {
             setunderline("Projects");
           }}
         >
-          <FaProjectDiagram /> Projects {underline === "Projects" ? <hr /> : ""}
+          <FaProjectDiagram /> <span>Projects</span> {underline === "Projects" ? <hr /> : ""}
         </li>
         <li
           onClick={() => {
             setunderline("Contact");
           }}
         >
-          <FaPhone /> Contact {underline === "Contact" ? <hr /> : ""}
+          <FaPhone /> <span>Contact</span> {underline === "Contact" ? <hr /> : ""}
         </li>
         <li
           onClick={() => {
             setunderline("Skils");
           }}
         >
-          <FaSkiing /> Skils {underline === "Skils" ? <hr /> : ""}
+          <FaSkiing /> <span>Skils</span> {underline === "Skils" ? <hr /> : ""}
         </li>
         <li
           onClick={() => {
             setunderline("Service");
           }}
         >
-          <FaServicestack /> Service {underline === "Service" ? <hr /> : ""}
+          <FaServicestack /> <span>Service</span> {underline === "Service" ? <hr /> : ""}
         </li>
        
       </ul>

@@ -75,9 +75,10 @@ span, strong{
 
 }
 button:hover{
-    background-color: var(--Btn_bga);
+    background-color:black;
     color: #fff;
     transition: 0.2s;
+    border: solid gold 1px;
 }
 a{
     text-decoration: none;
